@@ -1,0 +1,48 @@
+.signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 20px 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  .input-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    label {
+      font-weight: 900;
+      margin: 10px;
+      span {
+        color: red;
+      }
+    }
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      background: transparent;
+      border: 1px solid rgb(228, 222, 222);
+      outline: none;
+    }
+  }
+  button {
+    width: 50%;
+    padding: 0.9rem 3rem;
+    background: linear-gradient(
+      0deg,
+      rgba(0, 172, 238, 1) 0%,
+      rgba(2, 126, 251, 1) 100%
+    );
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+    border: none;
+    margin: 20px 0 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px auto;
+    color: white;
+  }
+}

@@ -3,9 +3,14 @@ const chats = require("./data/data");
 const cors = require("cors");
 
 const dotenv = require("dotenv");
-
-const app = express();
+const connectDB = require("./config/db");
 dotenv.config();
+
+const USERNAME = process.env.DB_USER;
+const PASSWORD = process.env.DB_PASSWORD;
+
+connectDB(USERNAME, PASSWORD);
+const app = express();
 
 app.use(cors());
 
